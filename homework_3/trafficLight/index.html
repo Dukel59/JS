@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <title>Document</title>
+    <style>
+        .wrapper{
+            display: flex;
+            padding: 20px;
+        }
+        .trafficLight{
+            padding: 10px;
+            border: 2px solid rgb(146, 146, 146);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+        .light{
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: rgb(146, 146, 146);
+            margin: 0 10px;
+        }
+        .button{
+            padding: 10px;
+            width: 75px;
+            text-transform: uppercase;
+        }
+        .redActive{
+            background-color:red;
+        }
+        .yellowActive{
+            background-color:yellow;
+        }
+        .greenActive{
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="trafficLight">
+            <div class="light" id="red"></div>
+            <div class="light" id="yellow"></div>
+            <div class="light" id="green"></div>
+        </div>
+        <button class="button" id="but">next</button>
+    </div>
+</body>
+</html>

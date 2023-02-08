@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <style>
+        .but{
+            margin: 20px;
+            padding: 10px;
+        }
+        .modal{
+            background-color: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            overflow-y: hidden;
+            visibility: hidden;
+        }
+        .contentModal{
+            background-color:rgb(40, 99, 94);
+            width: 250px;
+            height: 150px;
+            padding: 20px;
+        }
+        .modalHeader{
+            font-weight: bold;
+            text-align: center;
+        }
+        .modalButton{
+            width: 100%;
+            height: 30px;
+            text-align: center;
+        }
+        .modalActive{
+            visibility: visible;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <button id="button" class="but">Open modal</button>
+    <div class="modal">
+        <div class="contentModal">
+            <h2 class="modalHeader">Hello from Modal Window!</h2>
+            <button class="modalButton" id="closeButton">Close</button>
+        </div>
+    </div>
+</body>
+</html>
